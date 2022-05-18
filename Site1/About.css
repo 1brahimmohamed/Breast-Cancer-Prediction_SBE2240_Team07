@@ -1,5 +1,4 @@
 .form-footer{
-    background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,6 +46,14 @@ form .user-details .input-box {
     border: 1px solid #CCC;
     padding-left: 15px;
     font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: #ec6989 ;
 }
 
 
@@ -66,8 +73,29 @@ form .button input {
     font-weight: 500;
     border-radius: 10px;
     letter-spacing: 1px;
+    cursor: pointer;
+}
 
+form .button input:hover{
+    background: #D45D7B;
+}
 
+@media (max-width: 584px) {
+    .Diagonosis {
+        max-width: 100%;
+    }
 
+    form .user-details .input-box {
+        margin: 0 0 15px 0;
+        width: 100%;
+    }
 
+    .Diagonosis form .user-details {
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+
+    .user-details::-webkit-scrollbar{
+        width: 0;
+    }
 }
