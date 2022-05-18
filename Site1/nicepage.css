@@ -32423,7 +32423,7 @@ a.u-link.u-text-hover-palette-3-light-3:hover {
 .u-text-palette-3-base,
 a.u-button-style.u-text-palette-3-base,
 a.u-button-style.u-text-palette-3-base[class*="u-border-"] {
-  color: #1d96a1 !important;
+  color: #ec6989 !important;
 }
 a.u-button-style.u-text-palette-3-base:hover,
 a.u-button-style.u-text-palette-3-base[class*="u-border-"]:hover,
@@ -32455,20 +32455,20 @@ a.u-button-style.u-button-style.active > .u-text-active-palette-3-base[class*="u
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-palette-3-base.active,
 .u-popupmenu-items.u-text-hover-palette-3-base .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-palette-3-base .u-nav-link.active {
-  color: #1d96a1 !important;
+  color: #ec6989 !important;
 }
 .u-text-palette-3-base .u-svg-link,
 .u-text-hover-palette-3-base:hover .u-svg-link,
 .u-button-style:hover > .u-text-hover-palette-3-base .u-svg-link,
 .u-button-style.u-button-style.active > .u-text-active-palette-3-base .u-svg-link,
 .u-text-hover-palette-3-base:focus .u-svg-link {
-  fill: #1d96a1;
+  fill: #ec6989;
 }
 .u-link.u-text-palette-3-base:hover {
   color: #1a8791 !important;
 }
 a.u-link.u-text-hover-palette-3-base:hover {
-  color: #1d96a1 !important;
+  color: #ec6989 !important;
 }
 .u-text-palette-4-dark-3,
 a.u-button-style.u-text-palette-4-dark-3,
@@ -34673,7 +34673,7 @@ a.u-link.u-text-hover-grey-90:hover {
         .u-image:not(.u-shading) > .u-container-layout > a,
         a
         {
-        color: #00b1a9;
+        color: #ec6989;
         }
         .u-overlap.u-overlap-transparent:not(.u-overlap-contrast) .u-header :not(.u-nav-item) > a:hover,
         .u-gradient > .u-container-layout > a:hover,
@@ -34687,7 +34687,7 @@ a.u-link.u-text-hover-grey-90:hover {
         .u-image:not(.u-shading) > .u-container-layout > .u-btn,
         .u-btn
         {
-        background-color: #00b1a9;
+        background-color: #ec6989;
         color: #ffffff;
         }
         .u-overlap.u-overlap-transparent:not(.u-overlap-contrast) .u-header :not(.u-nav-item) > .u-btn:hover,
@@ -34785,7 +34785,7 @@ a.u-link.u-text-hover-grey-90:hover {
 
 
 .u-footer .u-sheet-1 {
-  min-height: 309px;
+  min-height: 600px;
 }
 
 .u-footer .u-layout-wrap-1 {

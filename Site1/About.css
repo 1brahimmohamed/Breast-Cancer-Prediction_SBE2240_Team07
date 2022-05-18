@@ -1,0 +1,73 @@
+.form-footer{
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.Diagonosis{
+    max-width: 900x;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 5px;
+
+}
+
+.Diagonosis .title {
+    font-size: 45px;
+    text-align: center;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.Diagonosis form  .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form .user-details .input-box {
+    margin: 0 0 15px 0;
+    width: calc(100% / 5 - 20px);
+}
+
+.user-details .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #CCC;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+
+form .button {
+    height: 45px;
+    margin: 30px 400px 0 400px;
+}
+
+form .button input {
+    height: 100%;
+    width: 100%;
+    outline:none;
+    color: #fff;
+    background: #ec6989;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10px;
+    letter-spacing: 1px;
+
+
+
+
+}
