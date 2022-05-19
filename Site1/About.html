@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html style="font-size: 16px;">
-  <head>
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="keywords" content="">
@@ -8,207 +8,219 @@
     <meta name="page_type" content="np-template-header-footer-from-plugin">
     <title>Diagnosis</title>
     <link rel="stylesheet" href="nicepage.css" media="screen">
-<link rel="stylesheet" href="About.css" media="screen">
+    <link rel="stylesheet" href="About.css" media="screen">
+    <link rel="stylesheet" href="bootstrap.min.css"/>
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 4.3.3, nicepage.com">
-    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
-    
+    <link id="u-theme-google-font" rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+
     <script type="application/ld+json">{
-		"@context": "http://schema.org",
-		"@type": "Organization",
-		"name": "",
-		"logo": "#",
-		"sameAs": []
-}</script>
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "",
+        "logo": "#",
+        "sameAs": []
+    }</script>
     <meta name="theme-color" content="#00b1a9">
     <meta property="og:title" content="About">
     <meta property="og:type" content="website">
-  </head>
-  <body class="u-body"><header class="u-clearfix u-header u-image u-header" id="sec-41e8"><div class="u-clearfix u-sheet u-sheet-1">
-        <nav class="u-align-left u-menu u-menu-dropdown u-nav-spacing-25 u-offcanvas u-menu-1" data-responsive-from="XL">
-          <div class="menu-collapse">
-            <a class="u-btn-text u-button-style u-nav-link u-text-body-alt-color" href="#" style="padding: 4px 0px; font-size: calc(1em + 8px);">
-              <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 302 302" style="undefined"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-7b92"></use></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg-7b92" x="0px" y="0px" viewBox="0 0 302 302" style="enable-background:new 0 0 302 302;" xml:space="preserve" class="u-svg-content"><g><rect y="36" width="302" height="30"></rect><rect y="236" width="302" height="30"></rect><rect y="136" width="302" height="30"></rect>
-</g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-            </a>
-          </div>
-          <div class="u-nav-container">
-            <ul class="u-nav u-spacing-25 u-unstyled"><li class="u-nav-item"><a class="u-btn-text u-button-style u-nav-link" href="Home.html" style="padding: 8px 0px;">Home</a>
-</li><li class="u-nav-item"><a class="u-btn-text u-button-style u-nav-link" href="About.html" style="padding: 8px 0px;">Take the test</a>
-</li></ul>
-          </div>
-          <div class="u-nav-container-collapse">
-            <div class="u-align-center u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
-              <div class="u-inner-container-layout u-sidenav-overflow">
-                <div class="u-menu-close"></div>
-                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-btn-text u-button-style u-nav-link" href="Home.html">Home</a>
-</li><li class="u-nav-item"><a class="u-btn-text u-button-style u-nav-link" href="About.html">Take the test</a>
-</li></ul>
-              </div>
-            </div>
-            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
-          </div>
-        </nav>
-        <a href="#" class="u-image u-logo u-image-1" src="">
-          <img src="#" class="u-logo-image u-logo-image-1">
+</head>
+<body class="u-body">
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+    <div  class="container">
+        <a class="navbar-brand" href="#">
+            <img src="./images/NIMA.png" style="height: 20%; width: 20%">
         </a>
-      </div></header> 
-    
-    
-    <footer class="form-footer" id="sec-2903">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <div class="container">
-          <div class="Diagonosis">
-            <div class="title">Breast Cancer Diagnosis</div>
-            <form class="Diagonosis-form" action="{{ url_for('predict')}}" method="post">
-              <div class="user-details">
-                <div class="input-box">
-                  <span class="details">dataname</span>
-                  <input type="text" placeholder="enter your data" required>
-                </div>
-                <div class="input-box">
-                  <span class="details">dataname</span>
-                  <input type="text" placeholder="enter your data" required>
-                </div>
-                <div class="input-box">
-                  <span class="details">dataname</span>
-                  <input type="text" placeholder="enter your data" required>
-                </div>
-                <div class="input-box">
-                  <span class="details">dataname</span>
-                  <input type="text" placeholder="enter your data" required>
-                </div>
-                <div class="input-box">
-                  <span class="details">dataname</span>
-                  <input type="text" placeholder="enter your data" required>
-                </div>
-                <div class="input-box">
-                  <span class="details">dataname</span>
-                  <input type="text" placeholder="enter your data" required>
-                </div>
-                <div class="input-box">
-                  <span class="details">dataname</span>
-                  <input type="text" placeholder="enter your data" required>
-                </div>
-                <div class="input-box">
-                  <span class="details">dataname</span>
-                  <input type="text" placeholder="enter your data" required>
-                </div>
-                <div class="input-box">
-                  <span class="details">dataname</span>
-                  <input type="text" placeholder="enter your data" required>
-                </div>
-                <div class="input-box">
-                  <span class="details">dataname</span>
-                  <input type="text" placeholder="enter your data" required>
-                </div>
-                <div class="input-box">
-                  <span class="details">dataname</span>
-                  <input type="text" placeholder="enter your data" required>
-                </div>
-                <div class="input-box">
-                  <span class="details">dataname</span>
-                  <input type="text" placeholder="enter your data" required>
-                </div>
-                <div class="input-box">
-                  <span class="details">dataname</span>
-                  <input type="text" placeholder="enter your data" required>
-                </div>
-                <div class="input-box">
-                  <span class="details">dataname</span>
-                  <input type="text" placeholder="enter your data" required>
-                </div>
-                <div class="input-box">
-                  <span class="details">dataname</span>
-                  <input type="text" placeholder="enter your data" required>
-                </div>
-                <div class="input-box">
-                  <span class="details">dataname</span>
-                  <input type="text" placeholder="enter your data" required>
-                </div>
-                <div class="input-box">
-                  <span class="details">dataname</span>
-                  <input type="text" placeholder="enter your data" required>
-                </div>
-                <div class="input-box">
-                  <span class="details">dataname</span>
-                  <input type="text" placeholder="enter your data" required>
-                </div>
-                <div class="input-box">
-                  <span class="details">dataname</span>
-                  <input type="text" placeholder="enter your data" required>
-                </div>
-                <div class="input-box">
-                  <span class="details">dataname</span>
-                  <input type="text" placeholder="enter your data" required>
-                </div>
-                <div class="input-box">
-                  <span class="details">dataname</span>
-                  <input type="text" placeholder="enter your data" required>
-                </div>
-                <div class="input-box">
-                  <span class="details">dataname</span>
-                  <input type="text" placeholder="enter your data" required>
-                </div>
-                <div class="input-box">
-                  <span class="details">dataname</span>
-                  <input type="text" placeholder="enter your data" required>
-                </div>
-                <div class="input-box">
-                  <span class="details">dataname</span>
-                  <input type="text" placeholder="enter your data" required>
-                </div>
-                <div class="input-box">
-                  <span class="details">dataname</span>
-                  <input type="text" placeholder="enter your data" required>
-                </div>
-                <div class="input-box">
-                  <span class="details">dataname</span>
-                  <input type="text" placeholder="enter your data" required>
-                </div>
-                <div class="input-box">
-                  <span class="details">dataname</span>
-                  <input type="text" placeholder="enter your data" required>
-                </div>
-                <div class="input-box">
-                  <span class="details">dataname</span>
-                  <input type="text" placeholder="enter your data" required>
-                </div>
-                <div class="input-box">
-                  <span class="details">dataname</span>
-                  <input type="text" placeholder="enter your data" required>
-                </div>
-                <div class="input-box">
-                  <span class="details">dataname</span>
-                  <input type="text" placeholder="enter your data" required>
-                </div>
-              </div>
-                <div class="button">
-                  <input type="submit" value="Predict">
-                </div>
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-
-
-
-
-
-            </form>
-            
-            
-            
-            
-            
-            <br>
-            <br>
-            {{ prediction_text }}
-          </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="mx-auto"></div>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="./Home.html">Home</a>
+                </li>
+            </ul>
         </div>
-      </div></footer>
-    <section class="u-backlink u-clearfix u-grey-80">
-      <p class="u-text">
+    </div>
+</nav>
+
+<!--- Space Section --->
+<section>
+    <div style="height: 7em; background-image: url('images/1db315228240eb2ed1a3432ab564f4f6.png')"></div>
+</section>
+
+<footer class="form-footer" id="sec-2903">
+    <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="container">
+            <div class="Diagonosis">
+                <div class="title">Breast Cancer Diagnosis</div>
+                <form class="Diagonosis-form" action="{{ url_for('predict')}}" method="post">
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span class="details">dataname</span>
+                            <input type="text" placeholder="enter your data" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">dataname</span>
+                            <input type="text" placeholder="enter your data" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">dataname</span>
+                            <input type="text" placeholder="enter your data" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">dataname</span>
+                            <input type="text" placeholder="enter your data" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">dataname</span>
+                            <input type="text" placeholder="enter your data" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">dataname</span>
+                            <input type="text" placeholder="enter your data" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">dataname</span>
+                            <input type="text" placeholder="enter your data" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">dataname</span>
+                            <input type="text" placeholder="enter your data" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">dataname</span>
+                            <input type="text" placeholder="enter your data" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">dataname</span>
+                            <input type="text" placeholder="enter your data" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">dataname</span>
+                            <input type="text" placeholder="enter your data" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">dataname</span>
+                            <input type="text" placeholder="enter your data" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">dataname</span>
+                            <input type="text" placeholder="enter your data" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">dataname</span>
+                            <input type="text" placeholder="enter your data" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">dataname</span>
+                            <input type="text" placeholder="enter your data" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">dataname</span>
+                            <input type="text" placeholder="enter your data" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">dataname</span>
+                            <input type="text" placeholder="enter your data" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">dataname</span>
+                            <input type="text" placeholder="enter your data" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">dataname</span>
+                            <input type="text" placeholder="enter your data" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">dataname</span>
+                            <input type="text" placeholder="enter your data" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">dataname</span>
+                            <input type="text" placeholder="enter your data" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">dataname</span>
+                            <input type="text" placeholder="enter your data" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">dataname</span>
+                            <input type="text" placeholder="enter your data" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">dataname</span>
+                            <input type="text" placeholder="enter your data" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">dataname</span>
+                            <input type="text" placeholder="enter your data" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">dataname</span>
+                            <input type="text" placeholder="enter your data" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">dataname</span>
+                            <input type="text" placeholder="enter your data" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">dataname</span>
+                            <input type="text" placeholder="enter your data" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">dataname</span>
+                            <input type="text" placeholder="enter your data" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">dataname</span>
+                            <input type="text" placeholder="enter your data" required>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Predict">
+                    </div>
+
+
+                </form>
+
+
+                <br>
+                <br>
+                {{ prediction_text }}
+            </div>
+        </div>
+    </div>
+</footer>
+
+<section class="u-backlink u-clearfix u-grey-80">
+    <p class="u-text">
         <span>Your health is our top priority :)</span>
-    </section>
-  </body>
+</section>
+
+<script type="text/javascript">
+    var nav = document.querySelector('nav');
+
+    window.addEventListener('scroll', function () {
+        if (window.pageYOffset > 100) {
+            nav.classList.add('bg-dark', 'shadow');
+        } else {
+            nav.classList.remove('bg-dark', 'shadow');
+        }
+    });
+</script>
+</body>
 </html>
