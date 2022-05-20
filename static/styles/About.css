@@ -10,6 +10,8 @@
     width: 100%;
     padding: 25px 30px;
     border-radius: 5px;
+    align-items: center;
+    text-align: center;
 
 }
 
@@ -62,9 +64,9 @@ form .button {
     margin: 30px 400px 0 400px;
 }
 
-form .button input {
+form .button button {
     height: 100%;
-    width: 100%;
+    width: 250px;
     outline:none;
     color: #fff;
     background: #ec6989;
@@ -76,7 +78,7 @@ form .button input {
     cursor: pointer;
 }
 
-form .button input:hover{
+form .button button:hover{
     background: #D45D7B;
 }
 
@@ -98,4 +100,10 @@ form .button input:hover{
     .user-details::-webkit-scrollbar{
         width: 0;
     }
+}
+
+.prediction{
+    background-color:#ec6989;
+    width: 20%;
+    margin: 0 400px;
 }

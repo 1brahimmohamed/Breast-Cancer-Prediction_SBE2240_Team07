@@ -8,9 +8,9 @@
     <meta name="page_type" content="np-template-header-footer-from-plugin">
     <title>Diagnosis</title>
 
-    <link rel="stylesheet" href="{{ url_for('static', filename = 'styles/nicepage.css') }}" media="screen">
-    <link rel="stylesheet" href="{{ url_for('static', filename = 'styles/About.css') }}" media="screen">
-    <link rel="stylesheet" href="{{ url_for('static', filename = 'styles/bootstrap.min.css') }}" media="screen">
+    <link rel="stylesheet" href="../static/styles/nicepage.css" media="screen">
+    <link rel="stylesheet" href="../static/styles/About.css" media="screen">
+    <link rel="stylesheet" href="../static/styles/bootstrap.min.css" media="screen">
 
 
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
@@ -53,7 +53,7 @@
             <div class="mx-auto"></div>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="/">Return to Home</a>
+                    <a class="nav-link text-white" href="../templates/Home.html">Return to Home</a>
                 </li>
             </ul>
         </div>
@@ -71,164 +71,89 @@
             <div class="Diagonosis">
                 <div class="title">Breast Cancer Diagnosis</div>
 
-                {#                <form class="Diagonosis-form" action="{{ url_for('predict')}}"method="post">#}
-                {#                    <div class="user-details">#}
-                {#                        <div class="input-box">#}
-                {#                            <span class="details">Radius Mean</span>#}
-                {#                            <input type="text" placeholder="enter your data" required>#}
-                {#                        </div>#}
-                {#                        <div class="input-box">#}
-                {#                            <span class="details">Perimeter Mean</span>#}
-                {#                            <input type="text" placeholder="enter your data" required>#}
-                {#                        </div>#}
-
-                {#                        <div class="input-box">#}
-                {#                            <span class="details">Area Mean</span>#}
-                {#                            <input type="text" placeholder="enter your data" required>#}
-                {#                        </div>#}
-                {#                        <div class="input-box">#}
-                {#                            <span class="details">Compactness Mean</span>#}
-                {#                            <input type="text" placeholder="enter your data" required>#}
-                {#                        </div>#}
-                {#                        <div class="input-box">#}
-                {#                            <span class="details">Concavity Mean</span>#}
-                {#                            <input type="text" placeholder="enter your data" required>#}
-                {#                        </div>#}
-                {##}
-                {##}
-                {#                        <div class="input-box">#}
-                {#                            <span class="details">Concave Points Mean</span>#}
-                {#                            <input type="text" placeholder="enter your data" required>#}
-                {#                        </div>#}
-                {#                        <div class="input-box">#}
-                {#                            <span class="details">Radius se</span>#}
-                {#                            <input type="text" placeholder="enter your data" required>#}
-                {#                        </div>#}
-                {#                        <div class="input-box">#}
-                {#                            <span class="details">Perimeter se</span>#}
-                {#                            <input type="text" placeholder="enter your data" required>#}
-                {#                        </div>#}
-                {#                        <div class="input-box">#}
-                {#                            <span class="details">Area se</span>#}
-                {#                            <input type="text" placeholder="enter your data" required>#}
-                {#                        </div>#}
-                {#                        <div class="input-box">#}
-                {#                            <span class="details">Concave Points se</span>#}
-                {#                            <input type="text" placeholder="enter your data" required>#}
-                {#                        </div>#}
-                {##}
-                {#                        <div class="input-box">#}
-                {#                            <span class="details">Radius Worst</span>#}
-                {#                            <input type="text" placeholder="enter your data" required>#}
-                {#                        </div>#}
-                {#                        <div class="input-box">#}
-                {#                            <span class="details">Perimeter Worst</span>#}
-                {#                            <input type="text" placeholder="enter your data" required>#}
-                {#                        </div>#}
-                {#                        <div class="input-box">#}
-                {#                            <span class="details">Area Worst</span>#}
-                {#                            <input type="text" placeholder="enter your data" required>#}
-                {#                        </div>#}
-                {#                        <div class="input-box">#}
-                {#                            <span class="details">Concavity Worst</span>#}
-                {#                            <input type="text" placeholder="enter your data" required>#}
-                {#                        </div>#}
-                {#                        <div class="input-box">#}
-                {#
-                {#                            <input type="text" placeholder="enter your data" required>#}
-                {#                        </div>#}
-                {##}
-                {#                    </div>#}
-                {#                    <div class="button">#}
-                {#                        <input type="submit" value="Predict">#}
-                {#                    </div>#}
-                {##}
-                {#                </form>#}
-
-
                 <form action="{{ url_for('predict') }}" method="post">
                     <div class="user-details">
                         <div class="input-box">
                             <span class="details">Radius Mean</span>
-                            <input type="text" name="Sepal_Length" placeholder="Sepal_Length" required="required"/>
+                            <input type="text" name="Radius_Mean" placeholder="Ex: 17.99" required="required"/>
                         </div>
 
                         <div class="input-box">
                             <span class="details">Perimeter Mean</span>
-                            <input type="text" name="Sepal_Width" placeholder="Sepal_Width" required="required"/>
+                            <input type="text" name="Perimeter_Mean" placeholder="Ex: 122.8" required="required"/>
                         </div>
 
 
                         <div class="input-box">
                             <span class="details">Area Mean</span>
-                            <input type="text" name="Petal_Length" placeholder="Petal_Length" required="required"/>
+                            <input type="text" name="Area_Mean" placeholder="Ex: 1001" required="required"/>
                         </div>
 
                         <div class="input-box">
                             <span class="details">Compactness Mean</span>
-                            <input type="text" name="Petal_Width" placeholder="Petal_Width" required="required"/>
+                            <input type="text" name="Compactness_Mean" placeholder="Ex: 0.2776" required="required"/>
                         </div>
 
                         <div class="input-box">
                             <span class="details">Concavity Mean</span>
-                            <input type="text" name="hima1" placeholder="Petal_Width" required="required"/>
+                            <input type="text" name="Concavity_Mean" placeholder="Ex: 0.3001" required="required"/>
                         </div>
 
 
                         <div class="input-box">
                             <span class="details">Concave Points Mean</span>
-                            <input type="text" name="hima2" placeholder="Sepal_Length" required="required"/>
+                            <input type="text" name="Concave_Points_Mean" placeholder="Ex: 0.1471" required="required"/>
                         </div>
 
                         <div class="input-box">
                             <span class="details">Radius se</span>
-                            <input type="text" name="hima3" placeholder="Sepal_Width" required="required"/>
+                            <input type="text" name="Radius_se" placeholder="Ex: 1.095" required="required"/>
                         </div>
 
 
                         <div class="input-box">
                             <span class="details">Perimeter se</span>
-                            <input type="text" name="hima4" placeholder="Petal_Length" required="required"/>
+                            <input type="text" name="Perimeter_se" placeholder="Ex: 122.8" required="required"/>
                         </div>
 
                         <div class="input-box">
                             <span class="details">Area se</span>
-                            <input type="text" name="hima5" placeholder="Petal_Width" required="required"/>
+                            <input type="text" name="Area_se" placeholder="Ex: 153.4" required="required"/>
 
                         </div>
 
                         <div class="input-box">
                             <span class="details">Concave Points se</span>
-                            <input type="text" name="hima6" placeholder="Petal_Width" required="required"/>
+                            <input type="text" name="Concave_Points_se" placeholder="Ex: 0.01587" required="required"/>
                         </div>
 
                         <div class="input-box">
                             <span class="details">Radius Worst</span>
-                            <input type="text" name="hima7" placeholder="Sepal_Length" required="required"/>
+                            <input type="text" name="Radius_Worst" placeholder="Ex: 25.38" required="required"/>
                         </div>
 
                         <div class="input-box">
                             <span class="details">Perimeter Worst</span>
-                            <input type="text" name="hima8" placeholder="Sepal_Width" required="required"/>
+                            <input type="text" name="Perimeter_Worst" placeholder="Ex: 184.6" required="required"/>
                         </div>
 
                         <div class="input-box">
                             <span class="details">Area Worst</span>
-                            <input type="text" name="hima9" placeholder="Petal_Length" required="required"/>
+                            <input type="text" name="Area_Worst" placeholder="Ex: 2019" required="required"/>
                         </div>
 
                         <div class="input-box">
                             <span class="details">Concavity Worst</span>
-                            <input type="text" name="hima10" placeholder="Petal_Width" required="required"/>
+                            <input type="text" name="Concavity_Worst" placeholder="Ex: 0.7119" required="required"/>
                         </div>
 
                         <div class="input-box">
                             <span class="details">Compactness Worst</span>
-                            <input type="text" name="hima11" placeholder="Petal_Width" required="required"/>
+                            <input type="text" name="Compactness_Worst" placeholder="Ex: 0.6656" required="required"/>
                         </div>
 
                         <div class="button">
-                                                    <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+                            <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
 
                         </div>
                     </div>
@@ -237,7 +162,10 @@
 
                 <br>
                 <br>
-                {{ prediction_text }}
+
+                <div class="prediction">
+                    {{ prediction_text }}
+                </div>
             </div>
         </div>
     </div>
@@ -248,7 +176,7 @@
         <p class="u-text">
             <span>Your health is our top priority :)</span>
     </section>
-    <footer/>
+</footer>
     <script type="text/javascript">
         var nav = document.querySelector('nav');
 

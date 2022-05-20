@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <!--From https://codepen.io/frytyler/pen/EGdtg-->
+
 <head>
     <meta charset="UTF-8">
     <title>ML API</title>
@@ -12,38 +13,39 @@
 </head>
 
 <body>
-<div class="login">
-    <h1>Flower Class Prediction</h1>
+    <div class="login">
+        <h1>Flower Class Prediction</h1>
 
-    <!-- Main Input For Receiving Query to our ML -->
-    <form action="{{ url_for('predict') }}" method="post">
+        <!-- Main Input For Receiving Query to our ML -->
+        <form action="{{ url_for('predict') }}" method="post">
 
-        <input type="text" name="Sepal_Length" placeholder="Sepal_Length" required="required"/>
-        <input type="text" name="Sepal_Width" placeholder="Sepal_Width" required="required"/>
-        <input type="text" name="Petal_Length" placeholder="Petal_Length" required="required"/>
-        <input type="text" name="Petal_Width" placeholder="Petal_Width" required="required"/>
-        <input type="text" name="hima1" placeholder="Petal_Width" required="required"/>
-        <input type="text" name="hima2" placeholder="Sepal_Length" required="required"/>
-        <input type="text" name="hima3" placeholder="Sepal_Width" required="required"/>
-        <input type="text" name="hima4" placeholder="Petal_Length" required="required"/>
-        <input type="text" name="hima5" placeholder="Petal_Width" required="required"/>
-        <input type="text" name="hima6" placeholder="Petal_Width" required="required"/>
-        <input type="text" name="hima7" placeholder="Sepal_Length" required="required"/>
-        <input type="text" name="hima8" placeholder="Sepal_Width" required="required"/>
-        <input type="text" name="hima9" placeholder="Petal_Length" required="required"/>
-        <input type="text" name="hima10" placeholder="Petal_Width" required="required"/>
-        <input type="text" name="hima11" placeholder="Petal_Width" required="required"/>
+            <input type="text" name="Sepal_Length" placeholder="Sepal_Length" required="required" />
+            <input type="text" name="Sepal_Width" placeholder="Sepal_Width" required="required" />
+            <input type="text" name="Petal_Length" placeholder="Petal_Length" required="required" />
+            <input type="text" name="Petal_Width" placeholder="Petal_Width" required="required" />
+            <input type="text" name="hima1" placeholder="Petal_Width" required="required" />
+            <input type="text" name="hima2" placeholder="Sepal_Length" required="required" />
+            <input type="text" name="hima3" placeholder="Sepal_Width" required="required" />
+            <input type="text" name="hima4" placeholder="Petal_Length" required="required" />
+            <input type="text" name="hima5" placeholder="Petal_Width" required="required" />
+            <input type="text" name="hima6" placeholder="Petal_Width" required="required" />
+            <input type="text" name="hima7" placeholder="Sepal_Length" required="required" />
+            <input type="text" name="hima8" placeholder="Sepal_Width" required="required" />
+            <input type="text" name="hima9" placeholder="Petal_Length" required="required" />
+            <input type="text" name="hima10" placeholder="Petal_Width" required="required" />
+            <input type="text" name="hima11" placeholder="Petal_Width" required="required" />
 
 
-        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
-    </form>
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+        </form>
 
-    <br>
-    <br>
-    {{ prediction_text }}
+        <br>
+        <br>
+        {{ prediction_text }}
 
-</div>
+    </div>
 
 
 </body>
+
 </html>
