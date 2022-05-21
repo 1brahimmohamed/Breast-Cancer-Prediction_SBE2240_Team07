@@ -19,8 +19,6 @@ def predict():
     float_features = [float(x) for x in request.form.values()]
     features = [np.array(float_features)]
 
-    # print(float_features)
-
     prediction = model.predict(features)
 
     if prediction == 1:
