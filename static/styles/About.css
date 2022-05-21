@@ -103,7 +103,6 @@ form .button button:hover{
 }
 
 .prediction{
-    background-color:#ec6989;
-    width: 20%;
+    color: white;
     margin: 0 400px;
 }

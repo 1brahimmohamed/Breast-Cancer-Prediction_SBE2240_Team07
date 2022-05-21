@@ -3,9 +3,8 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <meta name="keywords" content="ML Test">
+    <meta name="description" content="Breast Cancer ML test">
     <title>Diagnosis</title>
 
     <link rel="stylesheet" href="../static/styles/nicepage.css" media="screen">
@@ -13,9 +12,11 @@
     <link rel="stylesheet" href="../static/styles/bootstrap.min.css" media="screen">
 
 
-    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
-    <meta name="generator" content="Nicepage 4.3.3, nicepage.com">
+    <script class="u-script" type="text/javascript" src="../static/js/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="../static/js/nicepage.js" defer=""></script>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <link id="u-theme-google-font" rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
 
@@ -26,9 +27,6 @@
         "logo": "#",
         "sameAs": []
     }</script>
-    <meta name="theme-color" content="#00b1a9">
-    <meta property="og:title" content="About">
-    <meta property="og:type" content="website">
 </head>
 <body class="u-body">
 
@@ -53,7 +51,7 @@
             <div class="mx-auto"></div>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="../templates/Home.html">Return to Home</a>
+                    <a class="nav-link text-white" href="/">Return to Home</a>
                 </li>
             </ul>
         </div>
@@ -153,7 +151,9 @@
                         </div>
 
                         <div class="button">
-                            <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+                            <button type="submit" class="btn btn-primary btn-block btn-large" id="predict-text">
+                                Predict
+                            </button>
 
                         </div>
                     </div>
@@ -163,9 +163,6 @@
                 <br>
                 <br>
 
-                <div class="prediction">
-                    {{ prediction_text }}
-                </div>
             </div>
         </div>
     </div>
@@ -177,16 +174,25 @@
             <span>Your health is our top priority :)</span>
     </section>
 </footer>
-    <script type="text/javascript">
-        var nav = document.querySelector('nav');
+<script type="text/javascript">
+    let nav = document.querySelector('nav');
 
-        window.addEventListener('scroll', function () {
-            if (window.pageYOffset > 100) {
-                nav.classList.add('bg-dark', 'shadow');
-            } else {
-                nav.classList.remove('bg-dark', 'shadow');
-            }
-        });
-    </script>
+    window.addEventListener('scroll', function () {
+        if (window.pageYOffset > 100) {
+            nav.classList.add('bg-dark', 'shadow');
+        } else {
+            nav.classList.remove('bg-dark', 'shadow');
+        }
+    });
+</script>
+<script>
+    <!--   receive the data from app.py to make the sweer alert     -->
+    let output = '{{ prediction_text }}'
+
+    if (output === 'The Tumor is Malignant')
+        Swal.fire(output, '', 'warning')
+    else if (output === 'The Tumor is Benign')
+        Swal.fire(output, '', 'success')
+</script>
 </body>
 </html>

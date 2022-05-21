@@ -28,8 +28,8 @@ def predict():
     elif prediction == 0:
         prediction_text = "Benign"
 
-    return render_template("About.html", prediction_text = "The cancer is {}".format(prediction_text))
+    return render_template("About.html", prediction_text = "The Tumor is {}".format(prediction_text))
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, port="2907")
 
