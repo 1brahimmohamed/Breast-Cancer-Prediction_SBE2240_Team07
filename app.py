@@ -31,5 +31,5 @@ def predict():
     return render_template("About.html", prediction_text = "The Tumor is {}".format(prediction_text))
 
 if __name__ == "__main__":
-    app.run(debug=True, port="2907")
+    app.run(debug=True, port="2908")
 
