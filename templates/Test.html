@@ -9,7 +9,7 @@
 
     <link rel="icon" href="../static/images/icon.png">
     <link rel="stylesheet" href="../static/styles/nicepage.css" media="screen">
-    <link rel="stylesheet" href="../static/styles/About.css" media="screen">
+    <link rel="stylesheet" href="../static/styles/test.css" media="screen">
     <link rel="stylesheet" href="../static/styles/bootstrap.min.css" media="screen">
     <link id="u-theme-google-font" rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
@@ -69,84 +69,60 @@
                 <div class="title">Breast Cancer Diagnosis</div>
 
                 <form action="{{ url_for('predict') }}" method="post">
+
                     <div class="user-details">
                         <div class="input-box">
-                            <span class="details">Radius Mean</span>
-                            <input type="text" name="Radius_Mean" placeholder="Ex: 17.99" required="required"/>
+                            <span class="details">Texture Mean</span>
+                            <input type="text" name="texture_mean" placeholder="Ex: 10.38" required="required"/>
                         </div>
-
-                        <div class="input-box">
-                            <span class="details">Perimeter Mean</span>
-                            <input type="text" name="Perimeter_Mean" placeholder="Ex: 122.8" required="required"/>
-                        </div>
-
 
                         <div class="input-box">
                             <span class="details">Area Mean</span>
-                            <input type="text" name="Area_Mean" placeholder="Ex: 1001" required="required"/>
+                            <input type="text" name="area_mean" placeholder="Ex: 1001" required="required"/>
                         </div>
 
+
                         <div class="input-box">
-                            <span class="details">Compactness Mean</span>
-                            <input type="text" name="Compactness_Mean" placeholder="Ex: 0.2776" required="required"/>
+                            <span class="details">Smoothness Mean</span>
+                            <input type="text" name="smoothness_mean" placeholder="Ex: 0.1184" required="required"/>
                         </div>
 
                         <div class="input-box">
                             <span class="details">Concavity Mean</span>
-                            <input type="text" name="Concavity_Mean" placeholder="Ex: 0.3001" required="required"/>
+                            <input type="text" name="concavity_mean" placeholder="Ex: 0.3001" required="required"/>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details">Area Se</span>
+                            <input type="text" name="area_se" placeholder="Ex: 153.4" required="required"/>
                         </div>
 
 
                         <div class="input-box">
-                            <span class="details">Concave Points Mean</span>
-                            <input type="text" name="Concave_Points_Mean" placeholder="Ex: 0.1471" required="required"/>
+                            <span class="details">Concavity Se</span>
+                            <input type="text" name="concavity_se" placeholder="Ex: 0.05373" required="required"/>
                         </div>
 
                         <div class="input-box">
-                            <span class="details">Radius se</span>
-                            <input type="text" name="Radius_se" placeholder="Ex: 1.095" required="required"/>
+                            <span class="details">Fractal Dimension Se</span>
+                            <input type="text" name="fractal_dimension_se" placeholder="Ex: 0.006193" required="required"/>
                         </div>
 
 
                         <div class="input-box">
-                            <span class="details">Perimeter se</span>
-                            <input type="text" name="Perimeter_se" placeholder="Ex: 122.8" required="required"/>
-                        </div>
-
-                        <div class="input-box">
-                            <span class="details">Area se</span>
-                            <input type="text" name="Area_se" placeholder="Ex: 153.4" required="required"/>
-
-                        </div>
-
-                        <div class="input-box">
-                            <span class="details">Concave Points se</span>
-                            <input type="text" name="Concave_Points_se" placeholder="Ex: 0.01587" required="required"/>
-                        </div>
-
-                        <div class="input-box">
-                            <span class="details">Radius Worst</span>
-                            <input type="text" name="Radius_Worst" placeholder="Ex: 25.38" required="required"/>
-                        </div>
-
-                        <div class="input-box">
-                            <span class="details">Perimeter Worst</span>
-                            <input type="text" name="Perimeter_Worst" placeholder="Ex: 184.6" required="required"/>
-                        </div>
-
-                        <div class="input-box">
-                            <span class="details">Area Worst</span>
-                            <input type="text" name="Area_Worst" placeholder="Ex: 2019" required="required"/>
+                            <span class="details">Smoothness Worst</span>
+                            <input type="text" name="smoothness_worst" placeholder="Ex: 0.1622" required="required"/>
                         </div>
 
                         <div class="input-box">
                             <span class="details">Concavity Worst</span>
-                            <input type="text" name="Concavity_Worst" placeholder="Ex: 0.7119" required="required"/>
+                            <input type="text" name="concavity_worst" placeholder="Ex: 0.7119" required="required"/>
+
                         </div>
 
                         <div class="input-box">
-                            <span class="details">Compactness Worst</span>
-                            <input type="text" name="Compactness_Worst" placeholder="Ex: 0.6656" required="required"/>
+                            <span class="details">Symmetry Worst</span>
+                            <input type="text" name="symmetry_worst" placeholder="Ex: 0.4601" required="required"/>
                         </div>
 
                         <div class="button">
@@ -166,7 +142,6 @@
         </div>
     </div>
 </section>
-
 <footer>
     <section class="u-backlink u-clearfix u-grey-80">
         <p class="u-text">
@@ -187,7 +162,7 @@
 <script>
     <!--   receive the data from app.py to make the sweer alert     -->
     let output = '{{ prediction_text }}'
-
+    console.log(output)
     if (output === 'The Tumor is Malignant')
         Swal.fire(output, '', 'warning')
     else if (output === 'The Tumor is Benign')

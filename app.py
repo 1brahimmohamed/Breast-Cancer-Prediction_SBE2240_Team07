@@ -12,7 +12,7 @@ def Home():
 
 @app.route("/test")
 def test():
-    return render_template("About.html")
+    return render_template("Test.html")
 
 @app.route("/predict", methods = ["POST"])
 def predict():
@@ -26,7 +26,7 @@ def predict():
     elif prediction == 0:
         prediction_text = "Benign"
 
-    return render_template("About.html", prediction_text = "The Tumor is {}".format(prediction_text))
+    return render_template("Test.html", prediction_text = "The Tumor is {}".format(prediction_text))
 
 if __name__ == "__main__":
     app.run(debug=True, port="2908")
